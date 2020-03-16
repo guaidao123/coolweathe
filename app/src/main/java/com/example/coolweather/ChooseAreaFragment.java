@@ -54,7 +54,6 @@ public class ChooseAreaFragment extends Fragment {
     private List<County> countyList;
     private Province selectedProvince;
     private City selectedCity;
-    private County selectedCounty;
 
     private int currentLevel;
 
@@ -94,10 +93,7 @@ public class ChooseAreaFragment extends Fragment {
                         activity.drawerLayout.closeDrawers();
                         activity.swipeRefresh.setRefreshing(true);
                         activity.requestWeather(weatherId);
-
                     }
-
-
                 }
             }
         });
